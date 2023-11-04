@@ -1,0 +1,8 @@
+const arr = [1, 2, 3, 4, 5];
+
+const res = arr?.reduce((acc, cur) => {
+  console.log({ acc, cur });
+  return acc + cur; // whatever we are returning that will work like a Accumeletor for next iteration.
+}, 0); // whatever we pass here that goes in Accumelator of First iteration.
+
+console.log({ res });
