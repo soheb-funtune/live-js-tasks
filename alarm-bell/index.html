@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="./alarme-bell.js"></script> -->
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- we can "mute" , 'autoplay' , 'loop' the audio -->
+    <audio id="myAudio" controls>
+      <source src="./6 Kalimas.mp3" type="audio/mp3" />
+    </audio>
+    <!-- <button onClick="playAudio()" type="button">Play Audio</button> -->
+  </body>
+  <script>
+    const playAudio = (minutes) => {
+      setTimeout(() => {
+        let res = document.getElementById("myAudio").play();
+        console.log({ res });
+      }, 2000);
+    };
+    const minutes = prompt("enter minutes!");
+    if (minutes) playAudio(minutes);
+  </script>
+</html>
+
+
